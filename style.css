@@ -139,4 +139,7 @@ footer input[type="email"]::placeholder {
   .sm-center {
     text-align: center;
   }
+  body::before {
+    background-size: contain;
+  }
 }
