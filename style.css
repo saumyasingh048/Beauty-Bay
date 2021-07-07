@@ -35,7 +35,7 @@ body::before {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +139,5 @@ footer input[type="email"]::placeholder {
   .sm-center {
     text-align: center;
   }
-  body::before {
-    background-size: contain;
-  }
+  
 }
