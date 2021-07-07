@@ -1,0 +1,141 @@
+/* ********************* */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Lora&family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+/* ********************* */
+/* Variables */
+:root {
+  --primary-heading-font-style: "Lora", serif;
+  --primary-heading-font-size: 3.2rem;
+  --secondary-heading-font-style: "Montserrat", sans-serif;
+  --secondary-heading-font-size: 1.8rem;
+  --paragraph-font-style: "Hind Siliguri", sans-serif;
+  --paragraph-font-size: 1rem;
+}
+/* ********************* */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.brand {
+  font-family: "Festive", cursive;
+}
+
+/* Home Section */
+body::before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.main-div {
+  height: 95vh;
+  width: 100%;
+}
+/* ********************* */
+/* Services Section */
+#services {
+  height: fit-content;
+  width: 100%;
+}
+
+.circle-img {
+  height: 100px;
+}
+/* ********************* */
+/* Footer */
+footer {
+  background-color: pink;
+}
+
+footer a {
+  color: rgb(226, 51, 110);
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+.icon {
+  margin: 0px 10px 0px 0px;
+}
+
+footer input[type="email"] {
+  height: 2.3rem;
+  padding: 0px 10px;
+  background-color: rgb(226, 51, 110);
+  border: none;
+  width: 100%;
+}
+
+footer input[type="email"]::placeholder {
+  color: white;
+}
+
+.btn-footer {
+  padding: 8px 10px;
+  border: none;
+  background-color: palevioletred;
+  color: white;
+  width: fit-content;
+}
+
+.btn-footer:hover {
+  background-color: rgb(253, 142, 160);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* ********************* */
+/* Utility Classes */
+.primary-heading {
+  font-size: var(--primary-heading-font-size);
+  font-family: var(--primary-heading-font-style);
+}
+
+.secondary-heading {
+  font-size: var(--secondary-heading-font-size);
+  font-family: var(--secondary-heading-font-style);
+}
+
+.p-font {
+  font-size: var(--paragraph-font-size);
+  font-family: var(--paragraph-font-style);
+}
+
+.center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.footer-text {
+  color: rgb(226, 51, 110);
+}
+
+/* Media Query */
+@media screen and (max-device-width: 575px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .sm-center {
+    text-align: center;
+  }
+}
